@@ -1,0 +1,16 @@
+# Node.js-Zeug
+node_modules/
+.env
+.DS_Store
+
+# Log-Dateien
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Systemdateien
+Thumbs.db
+*.log
+
+# VS Code spezifisch
+.vscode/
