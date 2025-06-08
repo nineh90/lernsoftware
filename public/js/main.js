@@ -258,7 +258,7 @@ function zeigeAufgaben(aufgaben, fach, user = null){
         zeigePopup(korrekt ? "Richtig! 🎉" : "Leider falsch 😕", korrekt, 1600);
 
         if (korrekt) {
-          speichereXP(5);
+          speichereXP(1);
         } else {
           const frageHash = frage.frage + "|" + frage.richtigeAntwort;
           if (!falschBeantwortet.has(frageHash)) {
