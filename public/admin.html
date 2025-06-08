@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lernsoftware Admin-Bereich</title>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+  <button id="logout-button" onclick="logout()">Logout</button>
+
+  <div class="login-container">
+    <h1>Admin-Bereich</h1>
+
+    <div class="button-area">
+      <button onclick="zeigeNutzerVerwaltung()">👤 Nutzer Anzeigen</button>
+      <button onclick="zeigeAufgabenVerwaltung()">📚 Aufgaben verwalten</button>
+      <button onclick="zeigeKlassenUebersicht()">📊 Klassenübersicht</button>
+      <button onclick="zeigeBelohnungsModal()">🎁 Belohnungen</button>
+    </div>
+  </div>
+
+  <div id="admin-aktionsbereich" style="margin-top: 20px;"></div>
+
+    <div id="bearbeiten-popup" class="pokemon-card hidden">
+      <h3>✏️ Aufgabe bearbeiten</h3>
+      <input id="bearbeite-frage" placeholder="Frage" style="width:100%; margin-bottom:10px;">
+      <input id="bearbeite-richtig" placeholder="Richtige Antwort" style="width:100%; margin-bottom:10px;">
+      <input class="bearbeite-falsch" placeholder="Falsche Antwort 1" style="width:100%; margin-bottom:5px;">
+      <input class="bearbeite-falsch" placeholder="Falsche Antwort 2" style="width:100%; margin-bottom:5px;">
+      <input class="bearbeite-falsch" placeholder="Falsche Antwort 3" style="width:100%; margin-bottom:10px;">
+      <button class="login-button" onclick="speichereBearbeitung()">💾 Speichern</button>
+      <button class="antwort-button" onclick="schliesseBearbeitenPopup()">✖ Abbrechen</button>
+    </div>
+
+
+
+  <script src="js/admin.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

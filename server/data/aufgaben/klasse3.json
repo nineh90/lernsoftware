@@ -1,0 +1,56 @@
+{
+  "klasse": 2,
+  "faecher": {
+    "Deutsch": [
+      {
+        "frage": "Was ist das Gegenteil von 'lang'?",
+        "antworten": ["hoch", "kurz", "breit", "klein"],
+        "richtigeAntwort": "kurz"
+      },
+      {
+        "frage": "Welches Wort ist ein Verb?",
+        "antworten": ["Tisch", "laufen", "blau", "Auto"],
+        "richtigeAntwort": "laufen"
+      },
+      {
+        "frage": "Was passt grammatikalisch? Ich ___ einen Ball.",
+        "antworten": ["haben", "hat", "habe", "hab"],
+        "richtigeAntwort": "habe"
+      }
+    ],
+    "Mathe": [
+      {
+        "frage": "Was ist 6 + 4?",
+        "antworten": ["9", "10", "11", "12"],
+        "richtigeAntwort": "10"
+      },
+      {
+        "frage": "Welches Ergebnis ist richtig? 8 - 3 = ?",
+        "antworten": ["4", "5", "6", "7"],
+        "richtigeAntwort": "5"
+      },
+      {
+        "frage": "Was ist das Doppelte von 5?",
+        "antworten": ["10", "15", "8", "5"],
+        "richtigeAntwort": "10"
+      }
+    ],
+    "Englisch": [
+      {
+        "frage": "Was heißt 'apple' auf Deutsch?",
+        "antworten": ["Birne", "Banane", "Apfel", "Orange"],
+        "richtigeAntwort": "Apfel"
+      },
+      {
+        "frage": "Was ist die richtige Übersetzung für 'I am a boy'?",
+        "antworten": ["Ich bin ein Junge", "Ich bin ein Mann", "Ich bin ein Kind", "Ich bin ein Mädchen"],
+        "richtigeAntwort": "Ich bin ein Junge"
+      },
+      {
+        "frage": "Wie sagt man 'Danke' auf Englisch?",
+        "antworten": ["Please", "Hello", "Sorry", "Thank you"],
+        "richtigeAntwort": "Thank you"
+      }
+    ]
+  }
+}

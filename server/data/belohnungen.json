@@ -1,0 +1,72 @@
+[
+  {
+    "level": 2,
+    "name": "Neuer Avatar",
+    "beschreibung": "Du hast einen neuen coolen Avatar freigeschaltet! 🎨",
+    "typ": "avatar",
+    "wert": "freischalt-avatar-02"
+  },
+  {
+    "level": 3,
+    "name": "Sticker-Set",
+    "beschreibung": "Du bekommst ein Sticker-Set zum Sammeln! 🖼️",
+    "typ": "item",
+    "wert": "sticker-set-01"
+  },
+  {
+    "level": 4,
+    "name": "Extra-Pause",
+    "beschreibung": "Du bekommst eine kleine Pause zusätzlich! 🧘",
+    "typ": "bonus",
+    "wert": "pause-5min"
+  },
+  {
+    "level": 5,
+    "name": "Kleines Taschengeld",
+    "beschreibung": "Wow! Du bekommst ein kleines Taschengeld 💰",
+    "typ": "geld",
+    "wert": "2€"
+  },
+  {
+    "level": 6,
+    "name": "Geheimnisvolles Item",
+    "beschreibung": "Was sich wohl dahinter verbirgt...? 🎁",
+    "typ": "item",
+    "wert": "mystery-box"
+  },
+  {
+    "level": 7,
+    "name": "Test",
+    "beschreibung": "Test 🎁",
+    "typ": "geld",
+    "wert": "2€"
+  },
+  {
+    "level": 1,
+    "name": "Grillen",
+    "beschreibung": "Grillabend: Du bist der Chefkoch ;)",
+    "typ": "bonus",
+    "wert": "freizeit"
+  },
+  {
+    "level": 8,
+    "name": "Kochen",
+    "beschreibung": "Kochabend: Du bist der Chefkoch",
+    "typ": "bonus",
+    "wert": "Freizeit"
+  },
+  {
+    "level": 9,
+    "name": "Test Belohnung",
+    "beschreibung": "DIes ist ein Test für Level 9",
+    "typ": "avatar",
+    "wert": "avatar-25"
+  },
+  {
+    "level": 10,
+    "name": "Test Belohnung",
+    "beschreibung": "DIes ist ein Test für Level 10",
+    "typ": "bonus",
+    "wert": "Freizeit"
+  }
+]

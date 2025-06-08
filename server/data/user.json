@@ -1,0 +1,178 @@
+[
+  {
+    "id": 1,
+    "name": "Joel",
+    "avatarId": 5,
+    "rolle": "schüler",
+    "xp": 279,
+    "lernzeit": 14802,
+    "fleisssterne": 3,
+    "praemien": [
+      {
+        "level": 2,
+        "name": "Neuer Avatar",
+        "beschreibung": "Du hast einen neuen coolen Avatar freigeschaltet! 🎨",
+        "typ": "avatar",
+        "wert": "freischalt-avatar-02",
+        "datum": "2025-06-04"
+      },
+      {
+        "level": 3,
+        "name": "Sticker-Set",
+        "beschreibung": "Du bekommst ein Sticker-Set zum Sammeln! 🖼️",
+        "typ": "item",
+        "wert": "sticker-set-01",
+        "datum": "2025-06-05"
+      },
+      {
+        "level": 4,
+        "name": "Extra-Pause",
+        "beschreibung": "Du bekommst eine kleine Pause zusätzlich! 🧘",
+        "typ": "bonus",
+        "wert": "pause-5min",
+        "datum": "2025-06-05"
+      },
+      {
+        "level": 5,
+        "name": "Kleines Taschengeld",
+        "beschreibung": "Wow! Du bekommst ein kleines Taschengeld 💰",
+        "typ": "geld",
+        "wert": "2€",
+        "datum": "2025-06-05"
+      },
+      {
+        "level": 6,
+        "name": "Geheimnisvolles Item",
+        "beschreibung": "Was sich wohl dahinter verbirgt...? 🎁",
+        "typ": "item",
+        "wert": "mystery-box",
+        "datum": "2025-06-06"
+      },
+      {
+        "level": 7,
+        "name": "Test",
+        "beschreibung": "Test 🎁",
+        "typ": "geld",
+        "wert": "2€",
+        "datum": "2025-06-06"
+      },
+      {
+        "level": 8,
+        "name": "Kochen",
+        "beschreibung": "Kochabend: Du bist der Chefkoch",
+        "typ": "bonus",
+        "wert": "Freizeit",
+        "datum": "2025-06-08"
+      },
+      {
+        "level": 9,
+        "name": "Test Belohnung",
+        "beschreibung": "DIes ist ein Test für Level 9",
+        "typ": "avatar",
+        "wert": "avatar-25",
+        "datum": "2025-06-08"
+      },
+      {
+        "stufe": 3,
+        "zeit": 9000,
+        "name": "Lern-Champion",
+        "beschreibung": "2,5 Stunden Lernen – das ist Champions-Niveau! 🧠🏆",
+        "typ": "item",
+        "wert": "champ",
+        "datum": "2025-06-08"
+      }
+    ],
+    "schuljahr": 4,
+    "punkteByFach": {
+      "Mathe": 69,
+      "Physik": 25,
+      "Deutsch": 135,
+      "Englisch": 35,
+      "Sachkunde": 15
+    }
+  },
+  {
+    "id": 2,
+    "name": "Noah",
+    "avatarId": 4,
+    "rolle": "schüler",
+    "xp": 7,
+    "lernzeit": 110,
+    "fleisssterne": 0,
+    "praemien": [],
+    "schuljahr": 1,
+    "punkteByFach": {
+      "Mathe": 4,
+      "Englisch": 3
+    }
+  },
+  {
+    "id": 3,
+    "name": "Admin",
+    "avatarId": 100,
+    "rolle": "admin",
+    "passwort": "admin",
+    "xp": 24999,
+    "lernzeit": 0,
+    "fleisssterne": 3,
+    "praemien": [],
+    "schuljahr": null
+  },
+  {
+    "name": "Mattheus",
+    "rolle": "schüler",
+    "avatarId": 24,
+    "xp": 25,
+    "lernzeit": 242,
+    "praemien": [
+      {
+        "level": 2,
+        "name": "Neuer Avatar",
+        "beschreibung": "Du hast einen neuen coolen Avatar freigeschaltet! 🎨",
+        "typ": "avatar",
+        "wert": "freischalt-avatar-02",
+        "datum": "2025-06-08"
+      }
+    ],
+    "schuljahr": 4,
+    "punkteByFach": {
+      "Mathe": 15,
+      "Deutsch": 10
+    },
+    "id": 4,
+    "fleisssterne": 0
+  },
+  {
+    "name": "Kevin",
+    "rolle": "schüler",
+    "avatarId": 24,
+    "xp": 27,
+    "lernzeit": 1202,
+    "praemien": [
+      {
+        "level": 2,
+        "name": "Neuer Avatar",
+        "beschreibung": "Du hast einen neuen coolen Avatar freigeschaltet! 🎨",
+        "typ": "avatar",
+        "wert": "freischalt-avatar-02",
+        "datum": "2025-06-08"
+      },
+      {
+        "stufe": 1,
+        "zeit": 900,
+        "name": "Frühstarter-Bonus",
+        "beschreibung": "15 Minuten durchgehalten – sehr gut! 🔥",
+        "typ": "item",
+        "wert": "bonus-frueh",
+        "datum": "2025-06-08"
+      }
+    ],
+    "schuljahr": 2,
+    "punkteByFach": {
+      "Mathe": 3,
+      "Deutsch": 1
+    },
+    "id": 5,
+    "fleisssterne": 1
+  }
+]

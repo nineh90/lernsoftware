@@ -1,0 +1,111 @@
+{
+  "klasse": 1,
+  "faecher": {
+    "Deutsch": [
+      {
+        "frage": "Was ist das Gegenteil von 'heiß'?",
+        "antworten": [
+          "trocken",
+          "kalt",
+          "nass",
+          "warm"
+        ],
+        "richtigeAntwort": "kalt"
+      },
+      {
+        "frage": "Welches Wort ist ein Nomen?",
+        "antworten": [
+          "springen",
+          "Auto",
+          "grün",
+          "spielen"
+        ],
+        "richtigeAntwort": "Auto"
+      },
+      {
+        "frage": "Was ist das Gegenteil von groß?",
+        "antworten": [
+          "lang",
+          "mittel",
+          "dick",
+          "klein"
+        ],
+        "richtigeAntwort": "klein"
+      }
+    ],
+    "Mathe": [
+      {
+        "frage": "Was ist 2 + 3?",
+        "antworten": [
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "richtigeAntwort": "5"
+      },
+      {
+        "frage": "Wie viele Ecken hat ein Quadrat?",
+        "antworten": [
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "richtigeAntwort": "4"
+      },
+      {
+        "frage": "Was kommt nach der Zahl 9?",
+        "antworten": [
+          "8",
+          "7",
+          "10",
+          "11"
+        ],
+        "richtigeAntwort": "10"
+      }
+    ],
+    "Englisch": [
+      {
+        "frage": "Was heißt 'dog' auf Deutsch?",
+        "antworten": [
+          "Katze",
+          "Hund",
+          "Vogel",
+          "Maus"
+        ],
+        "richtigeAntwort": "Hund"
+      },
+      {
+        "frage": "Wie sagt man 'Hallo' auf Englisch?",
+        "antworten": [
+          "Bye",
+          "Good",
+          "Hello",
+          "Yes"
+        ],
+        "richtigeAntwort": "Hello"
+      },
+      {
+        "frage": "Was heißt 'red'?",
+        "antworten": [
+          "blau",
+          "gelb",
+          "grün",
+          "rot"
+        ],
+        "richtigeAntwort": "rot"
+      },
+      {
+        "frage": "Was heißt Hallo auf Englisch?",
+        "antworten": [
+          "good bye",
+          "true",
+          "Hello",
+          "false"
+        ],
+        "richtigeAntwort": "Hello"
+      }
+    ]
+  }
+}

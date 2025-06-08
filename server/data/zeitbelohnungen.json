@@ -1,0 +1,26 @@
+[
+  {
+    "stufe": 1,
+    "zeit": 900,
+    "name": "Frühstarter-Bonus",
+    "beschreibung": "15 Minuten durchgehalten – sehr gut! 🔥",
+    "typ": "item",
+    "wert": "bonus-frueh"
+  },
+  {
+    "stufe": 2,
+    "zeit": 4500,
+    "name": "Ausdauer-Medaille",
+    "beschreibung": "Schon über 1 Stunde fleißig – Respekt! 💪",
+    "typ": "item",
+    "wert": "ausdauer"
+  },
+  {
+    "stufe": 3,
+    "zeit": 9000,
+    "name": "Lern-Champion",
+    "beschreibung": "2,5 Stunden Lernen – das ist Champions-Niveau! 🧠🏆",
+    "typ": "item",
+    "wert": "champ"
+  }
+]

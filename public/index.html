@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Lernsoftware</title>
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<button id="logout-button" class="hidden" onclick="logout()">Logout</button>
+
+
+
+<div class="login-container">
+
+  <h1>Anmelden</h1>
+  <div class="user-list"></div>
+      <!-- Passwortfeld für Admins -->
+  <div id="passwort-bereich" class="hidden" style="margin-bottom: 20px;">
+    <input type="password" id="admin-passwort" placeholder="Admin-Passwort" style="padding: 10px; width: 100%; font-family: 'Roboto Mono', monospace;">
+  </div>
+
+  <div class="button-area">
+    <button class="login-button" onclick="anmelden()">Anmelden</button>
+    <button class="new-user-button" onclick="neuerNutzer()">+ Neuer Nutzer</button>
+  </div>
+</div>
+
+<div id="schueler-modal" class="pokemon-card hidden">
+  <!-- Fleißsterne -->
+  <div id="fleisssterne" class="fleissbereich">
+    <img src="assets/stern_grau.png" class="stern" id="stern-1" alt="Fleißstern 1" />
+    <img src="assets/stern_grau.png" class="stern" id="stern-2" alt="Fleißstern 2" />
+    <img src="assets/stern_grau.png" class="stern" id="stern-3" alt="Fleißstern 3" />
+  </div>
+  <!-- Kopfbereich: Klasse, Name, XP -->
+  <div class="modal-header-flex">
+    <h3 id="schueler-klasse" class="kopf-links"></h3>
+    <h1 id="schueler-name" class="kopf-mitte"></h1>
+    <h3 class="level-display">Level <span id="schueler-level"></span></h3>
+  </div>
+
+  <!-- Avatar + Timer Container -->
+  <div id="avatar-timer-container" class="avatar-hintergrund rechteck-avatar-container">
+    <svg class="timer-ring hidden" viewBox="0 0 100 100">
+      <circle class="ring-bg" cx="50" cy="50" r="45" />
+      <circle class="ring-progress" cx="50" cy="50" r="45" />
+      <text id="timer-text" x="50" y="55" text-anchor="middle" class="timer-text">10:00</text>
+    </svg>
+    <img id="schueler-avatar" class="avatar-img" src="" alt="Avatar">
+  </div>
+
+  <h3 id="schueler-xp" class="kopf-rechts"></h3>
+  <!-- XP-Bar -->
+  <div class="xp-bar">
+    <div class="xp-progress" style="width: 0%;"></div>
+  </div>
+
+  <div id="aktionsbereich">
+    <button onclick="waehleFach()">Fach wählen</button>
+    <button onclick="zeigeErfolge()">Erfolge anzeigen</button>
+    <button onclick="bearbeiteKlasse()">Schulklasse ändern</button>
+    <button onclick="bearbeiteAvatar()">Avatar bearbeiten</button>
+    <button onclick="zeigeVokabelmenue()">Vokabeltrainer</button>
+  </div>
+</div>
+
+<div id="feedback-popup" class="popup hidden"></div>
+
+<div id="belohnung-popup" class="popup hidden"></div>
+
+<div id="avatar-bearbeiten-modal" class="hidden">
+  <h3>Wähle deinen Avatar</h3>
+  <div id="avatar-auswahl" class="avatar-grid"></div>
+  <button class="login-button" onclick="schliesseAvatarAuswahl()">Zurück</button>
+</div>
+
+
+
+
+
+
+<!-- <script src="js/script.js"></script> -->
+  <script src="js/main.js"></script>
+</body>
+</html>

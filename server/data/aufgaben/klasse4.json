@@ -1,0 +1,73 @@
+{
+  "klasse": 4,
+  "faecher": {
+    "Deutsch": [
+      {
+        "frage": "Welches Wort ist ein Verb?",
+        "antworten": ["laufen", "Haus", "blau", "Tisch"],
+        "richtigeAntwort": "laufen"
+      },
+      {
+        "frage": "Wie schreibt man das Wort richtig?",
+        "antworten": ["Fahrad", "Fahrrad", "Fahhrad", "Farrad"],
+        "richtigeAntwort": "Fahrrad"
+      },
+      {
+        "frage": "Welche Wortart ist 'schön'?",
+        "antworten": ["Nomen", "Verb", "Adjektiv", "Artikel"],
+        "richtigeAntwort": "Adjektiv"
+      }
+    ],
+    "Mathe": [
+      {
+        "frage": "Wie viel ist 7 × 6?",
+        "antworten": ["42", "36", "48", "40"],
+        "richtigeAntwort": "42"
+      },
+      {
+        "frage": "Was ist die Hälfte von 100?",
+        "antworten": ["25", "40", "50", "60"],
+        "richtigeAntwort": "50"
+      },
+      {
+        "frage": "Wie viele Zentimeter sind 2 Meter?",
+        "antworten": ["200", "20", "100", "2"],
+        "richtigeAntwort": "200"
+      }
+    ],
+    "Englisch": [
+      {
+        "frage": "Was heißt 'window' auf Deutsch?",
+        "antworten": ["Wand", "Tür", "Fenster", "Dach"],
+        "richtigeAntwort": "Fenster"
+      },
+      {
+        "frage": "Wie sagt man 'Wo wohnst du?' auf Englisch?",
+        "antworten": ["How are you?", "Where are you from?", "Where do you live?", "What is your name?"],
+        "richtigeAntwort": "Where do you live?"
+      },
+      {
+        "frage": "Was ist die Mehrzahl von 'child'?",
+        "antworten": ["childs", "childes", "children", "childer"],
+        "richtigeAntwort": "children"
+      }
+    ],
+    "Sachkunde": [
+      {
+        "frage": "Wie viele Planeten hat unser Sonnensystem?",
+        "antworten": ["7", "8", "9", "10"],
+        "richtigeAntwort": "8"
+      },
+      {
+        "frage": "Welcher Sinn gehört NICHT zu den fünf Sinnen?",
+        "antworten": ["Riechen", "Sehen", "Laufen", "Schmecken"],
+        "richtigeAntwort": "Laufen"
+      },
+      {
+        "frage": "Was zeigt ein Kompass an?",
+        "antworten": ["Höhe", "Windrichtung", "Nordrichtung", "Zeit"],
+        "richtigeAntwort": "Nordrichtung"
+      }
+    ]
+  }
+}
