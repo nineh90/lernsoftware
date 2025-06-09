@@ -1,72 +1,86 @@
 [
   {
+    "level": 1,
+    "name": "Begrüßungspaket",
+    "beschreibung": "Willkommen! Du hast dein erstes Level erreicht. 🎉",
+    "typ": "bonus",
+    "wert": "willkommen"
+  },
+  {
     "level": 2,
-    "name": "Neuer Avatar",
-    "beschreibung": "Du hast einen neuen coolen Avatar freigeschaltet! 🎨",
-    "typ": "avatar",
-    "wert": "freischalt-avatar-02"
+    "name": "Sticker-Set",
+    "beschreibung": "Du bekommst ein kleines Sticker-Set! 🖼️",
+    "typ": "item",
+    "wert": "sticker-set"
   },
   {
     "level": 3,
-    "name": "Sticker-Set",
-    "beschreibung": "Du bekommst ein Sticker-Set zum Sammeln! 🖼️",
+    "name": "Süßigkeiten-Bonus",
+    "beschreibung": "Eine kleine Nascherei wartet auf dich! 🍬",
     "typ": "item",
-    "wert": "sticker-set-01"
+    "wert": "suessigkeit"
   },
   {
     "level": 4,
-    "name": "Extra-Pause",
-    "beschreibung": "Du bekommst eine kleine Pause zusätzlich! 🧘",
-    "typ": "bonus",
-    "wert": "pause-5min"
+    "name": "Dankeschön-Urkunde",
+    "beschreibung": "Du bekommst eine offizielle Urkunde mit deinem Namen. 🏅",
+    "typ": "item",
+    "wert": "urkunde"
   },
   {
     "level": 5,
-    "name": "Kleines Taschengeld",
-    "beschreibung": "Wow! Du bekommst ein kleines Taschengeld 💰",
-    "typ": "geld",
-    "wert": "2€"
+    "name": "Lobbrief für Zuhause",
+    "beschreibung": "Ein Brief mit ganz viel Lob – nur für dich! 📩",
+    "typ": "item",
+    "wert": "lobbrief"
   },
   {
     "level": 6,
-    "name": "Geheimnisvolles Item",
-    "beschreibung": "Was sich wohl dahinter verbirgt...? 🎁",
+    "name": "Wunsch-Sticker",
+    "beschreibung": "Du darfst dir einen Sticker deiner Wahl aussuchen! ✨",
     "typ": "item",
-    "wert": "mystery-box"
+    "wert": "wunschsticker"
   },
   {
     "level": 7,
-    "name": "Test",
-    "beschreibung": "Test 🎁",
-    "typ": "geld",
-    "wert": "2€"
-  },
-  {
-    "level": 1,
-    "name": "Grillen",
-    "beschreibung": "Grillabend: Du bist der Chefkoch ;)",
+    "name": "Belohnungskiste",
+    "beschreibung": "Ein Griff in die Überraschungskiste! 🧺",
     "typ": "bonus",
-    "wert": "freizeit"
+    "wert": "kiste"
   },
   {
     "level": 8,
-    "name": "Kochen",
-    "beschreibung": "Kochabend: Du bist der Chefkoch",
-    "typ": "bonus",
-    "wert": "Freizeit"
+    "name": "Snack-Zeit",
+    "beschreibung": "Du bekommst einen kleinen Snack in der Pause. 🥨🧃",
+    "typ": "item",
+    "wert": "snack"
   },
   {
     "level": 9,
-    "name": "Test Belohnung",
-    "beschreibung": "DIes ist ein Test für Level 9",
-    "typ": "avatar",
-    "wert": "avatar-25"
+    "name": "Emoji-Medaille",
+    "beschreibung": "Du bekommst eine lustige Papier-Medaille mit Emoji! 😄",
+    "typ": "item",
+    "wert": "medaille-emoji"
   },
   {
     "level": 10,
-    "name": "Test Belohnung",
-    "beschreibung": "DIes ist ein Test für Level 10",
+    "name": "1x Joker im Quiz",
+    "beschreibung": "Beim nächsten Quiz darfst du eine Aufgabe überspringen! 🃏",
     "typ": "bonus",
-    "wert": "Freizeit"
+    "wert": "joker"
+  },
+  {
+    "level": 11,
+    "name": "Mitarbeiter des Tages",
+    "beschreibung": "Du wirst als Lernheld des Tages ausgezeichnet! 🌟",
+    "typ": "bonus",
+    "wert": "lernheld"
+  },
+  {
+    "level": 12,
+    "name": "Mini-Gutschein",
+    "beschreibung": "Ein kleiner Gutschein, z. B. für einen Witz erzählen oder eine kleine Aufgabe wählen. 🎟️",
+    "typ": "bonus",
+    "wert": "minigutschein"
   }
 ]

@@ -2,55 +2,961 @@
   "klasse": 2,
   "faecher": {
     "Deutsch": [
-      {
-        "frage": "Was ist das Gegenteil von 'lang'?",
-        "antworten": ["hoch", "kurz", "breit", "klein"],
-        "richtigeAntwort": "kurz"
-      },
-      {
-        "frage": "Welches Wort ist ein Verb?",
-        "antworten": ["Tisch", "laufen", "blau", "Auto"],
-        "richtigeAntwort": "laufen"
-      },
-      {
-        "frage": "Was passt grammatikalisch? Ich ___ einen Ball.",
-        "antworten": ["haben", "hat", "habe", "hab"],
-        "richtigeAntwort": "habe"
-      }
-    ],
+  {
+    "frage": "Was ist das Gegenteil von 'lang'?",
+    "antworten": ["hoch", "kurz", "breit", "klein"],
+    "richtigeAntwort": "kurz"
+  },
+  {
+    "frage": "Welches Wort ist ein Verb?",
+    "antworten": ["Tisch", "laufen", "blau", "Auto"],
+    "richtigeAntwort": "laufen"
+  },
+  {
+    "frage": "Was passt grammatikalisch? Ich ___ einen Ball.",
+    "antworten": ["haben", "hat", "habe", "hab"],
+    "richtigeAntwort": "habe"
+  },
+  {
+    "frage": "Was ist ein Nomen?",
+    "antworten": ["laufen", "Haus", "blau", "isst"],
+    "richtigeAntwort": "Haus"
+  },
+  {
+    "frage": "Welche Wortart beschreibt, wie etwas ist?",
+    "antworten": ["Adjektiv", "Nomen", "Verb", "Artikel"],
+    "richtigeAntwort": "Adjektiv"
+  },
+  {
+    "frage": "Was ist das passende Fragewort: ___ heißt du?",
+    "antworten": ["Wo", "Wie", "Was", "Warum"],
+    "richtigeAntwort": "Wie"
+  },
+  {
+    "frage": "Setze das passende Wort ein: Der ___ ist rot.",
+    "antworten": ["Apfel", "laufen", "schön", "grün"],
+    "richtigeAntwort": "Apfel"
+  },
+  {
+    "frage": "Was ist das Gegenteil von 'laut'?",
+    "antworten": ["leise", "schnell", "hoch", "nah"],
+    "richtigeAntwort": "leise"
+  },
+  {
+    "frage": "Welches Wort ist ein Adjektiv?",
+    "antworten": ["klein", "Auto", "springen", "Buch"],
+    "richtigeAntwort": "klein"
+  },
+  {
+    "frage": "Was ist ein Artikel?",
+    "antworten": ["der", "Haus", "gehen", "blau"],
+    "richtigeAntwort": "der"
+  },
+  {
+  "frage": "Was ist das Gegenteil von 'kalt'?",
+  "antworten": ["heiß", "nass", "trocken", "weich"],
+  "richtigeAntwort": "heiß"
+},
+{
+  "frage": "Was ist ein Satzzeichen?",
+  "antworten": ["Punkt", "laufen", "Auto", "grün"],
+  "richtigeAntwort": "Punkt"
+},
+{
+  "frage": "Welche Zeitform ist 'ich ging'?",
+  "antworten": ["Gegenwart", "Zukunft", "Vergangenheit", "Befehl"],
+  "richtigeAntwort": "Vergangenheit"
+},
+{
+  "frage": "Was ist ein Tunwort?",
+  "antworten": ["Verb", "Nomen", "Adjektiv", "Artikel"],
+  "richtigeAntwort": "Verb"
+},
+{
+  "frage": "Welcher Satz ist richtig?",
+  "antworten": ["Ich gehe zur Schule.", "Ich gehst zur Schule.", "Ich geht zur Schule.", "Ich gegangen Schule."],
+  "richtigeAntwort": "Ich gehe zur Schule."
+},
+{
+  "frage": "Welche Wortart ist 'schön'?",
+  "antworten": ["Adjektiv", "Verb", "Nomen", "Artikel"],
+  "richtigeAntwort": "Adjektiv"
+},
+{
+  "frage": "Was gehört NICHT zu den Satzzeichen?",
+  "antworten": ["Fragezeichen", "Ausrufezeichen", "Komma", "Buchstabe"],
+  "richtigeAntwort": "Buchstabe"
+},
+{
+  "frage": "Was ist ein zusammengesetztes Wort?",
+  "antworten": ["Schultasche", "gehen", "der", "schön"],
+  "richtigeAntwort": "Schultasche"
+},
+{
+  "frage": "Was ist ein Fragewort?",
+  "antworten": ["wer", "der", "Haus", "springen"],
+  "richtigeAntwort": "wer"
+},
+{
+  "frage": "Was ist ein Beispiel für ein Nomen?",
+  "antworten": ["Hund", "schnell", "laufen", "auf"],
+  "richtigeAntwort": "Hund"
+},
+{
+  "frage": "Welche Zeitform ist 'ich werde gehen'?",
+  "antworten": ["Gegenwart", "Vergangenheit", "Zukunft", "Plusquamperfekt"],
+  "richtigeAntwort": "Zukunft"
+},
+{
+  "frage": "Was ist das Gegenteil von 'oben'?",
+  "antworten": ["unten", "hinten", "drinnen", "nah"],
+  "richtigeAntwort": "unten"
+},
+{
+  "frage": "Welche Endung haben oft Verben im Infinitiv?",
+  "antworten": ["-en", "-heit", "-lich", "-keit"],
+  "richtigeAntwort": "-en"
+},
+{
+  "frage": "Welcher Satz ist ein Fragesatz?",
+  "antworten": ["Magst du Eis?", "Ich esse Eis.", "Du isst Eis.", "Iss das Eis!"],
+  "richtigeAntwort": "Magst du Eis?"
+},
+{
+  "frage": "Was ist ein anderes Wort für 'Substantiv'?",
+  "antworten": ["Nomen", "Verb", "Adjektiv", "Artikel"],
+  "richtigeAntwort": "Nomen"
+},
+{
+  "frage": "Was beschreibt ein Adjektiv?",
+  "antworten": ["Eigenschaften", "Tiere", "Handlungen", "Orte"],
+  "richtigeAntwort": "Eigenschaften"
+},
+{
+  "frage": "Was ist ein bestimmter Artikel?",
+  "antworten": ["der", "ein", "eine", "kein"],
+  "richtigeAntwort": "der"
+},
+{
+  "frage": "Was passt: Der Hund ___ laut.",
+  "antworten": ["bellt", "gehen", "laut", "Tisch"],
+  "richtigeAntwort": "bellt"
+},
+{
+  "frage": "Was ist ein Beispiel für einen unbestimmten Artikel?",
+  "antworten": ["ein", "der", "das", "die"],
+  "richtigeAntwort": "ein"
+},
+{
+  "frage": "Was beschreibt die Mehrzahl von 'Haus'?",
+  "antworten": ["Häuser", "Hauses", "Hausen", "Hausse"],
+  "richtigeAntwort": "Häuser"
+},
+{
+  "frage": "Was ist ein Reimwort zu 'Sonne'?",
+  "antworten": ["Wonne", "laufen", "Wolke", "Tag"],
+  "richtigeAntwort": "Wonne"
+},
+{
+  "frage": "Wie heißt der Satzanfang richtig?",
+  "antworten": ["Heute", "heute", "heutE", "heUte"],
+  "richtigeAntwort": "Heute"
+},
+{
+  "frage": "Welches Wort ist ein Verb im Präsens?",
+  "antworten": ["rennt", "gerannt", "rennen", "rannte"],
+  "richtigeAntwort": "rennt"
+},
+{
+  "frage": "Was ist das Gegenteil von 'fröhlich'?",
+  "antworten": ["traurig", "lustig", "glücklich", "wach"],
+  "richtigeAntwort": "traurig"
+},
+{
+  "frage": "Welche Silben hat das Wort 'Schokolade'?",
+  "antworten": ["Scho-ko-la-de", "Schok-o-lade", "Schoko-la-de", "Schok-o-lad-e"],
+  "richtigeAntwort": "Scho-ko-la-de"
+}
+],
     "Mathe": [
       {
-        "frage": "Was ist 6 + 4?",
-        "antworten": ["9", "10", "11", "12"],
-        "richtigeAntwort": "10"
-      },
-      {
-        "frage": "Welches Ergebnis ist richtig? 8 - 3 = ?",
-        "antworten": ["4", "5", "6", "7"],
-        "richtigeAntwort": "5"
-      },
-      {
-        "frage": "Was ist das Doppelte von 5?",
-        "antworten": ["10", "15", "8", "5"],
-        "richtigeAntwort": "10"
-      }
+  "frage": "Was ist 7 + 6?",
+  "antworten": ["12", "13", "14", "15"],
+  "richtigeAntwort": "13"
+},
+{
+  "frage": "Was ist 12 - 4?",
+  "antworten": ["6", "8", "7", "9"],
+  "richtigeAntwort": "8"
+},
+{
+  "frage": "Was ist 3 × 4?",
+  "antworten": ["7", "12", "10", "14"],
+  "richtigeAntwort": "12"
+},
+{
+  "frage": "Was ist 16 ÷ 4?",
+  "antworten": ["4", "5", "3", "6"],
+  "richtigeAntwort": "4"
+},
+{
+  "frage": "Was ist das Doppelte von 8?",
+  "antworten": ["14", "16", "10", "18"],
+  "richtigeAntwort": "16"
+},
+{
+  "frage": "Was ist die Hälfte von 14?",
+  "antworten": ["7", "6", "8", "10"],
+  "richtigeAntwort": "7"
+},
+{
+  "frage": "Was ist 9 + 5?",
+  "antworten": ["13", "14", "15", "12"],
+  "richtigeAntwort": "14"
+},
+{
+  "frage": "Was ist 20 - 9?",
+  "antworten": ["10", "11", "12", "13"],
+  "richtigeAntwort": "11"
+},
+{
+  "frage": "Was ist 5 × 5?",
+  "antworten": ["10", "20", "25", "15"],
+  "richtigeAntwort": "25"
+},
+{
+  "frage": "Was ist 30 ÷ 5?",
+  "antworten": ["6", "5", "4", "3"],
+  "richtigeAntwort": "6"
+},
+{
+  "frage": "Wie viele Minuten hat eine halbe Stunde?",
+  "antworten": ["15", "30", "45", "60"],
+  "richtigeAntwort": "30"
+},
+{
+  "frage": "Was ist 100 - 75?",
+  "antworten": ["20", "15", "25", "30"],
+  "richtigeAntwort": "25"
+},
+{
+  "frage": "Was ist 6 × 3?",
+  "antworten": ["18", "12", "16", "21"],
+  "richtigeAntwort": "18"
+},
+{
+  "frage": "Was ist 4 × 7?",
+  "antworten": ["28", "24", "30", "32"],
+  "richtigeAntwort": "28"
+},
+{
+  "frage": "Was ist 40 ÷ 5?",
+  "antworten": ["7", "8", "9", "6"],
+  "richtigeAntwort": "8"
+},
+{
+  "frage": "Was ist 9 × 2?",
+  "antworten": ["18", "20", "17", "16"],
+  "richtigeAntwort": "18"
+},
+{
+  "frage": "Was ist 81 ÷ 9?",
+  "antworten": ["7", "9", "8", "6"],
+  "richtigeAntwort": "9"
+},
+{
+  "frage": "Was ist 6 + 9?",
+  "antworten": ["15", "14", "13", "16"],
+  "richtigeAntwort": "15"
+},
+{
+  "frage": "Was ist 10 mehr als 25?",
+  "antworten": ["35", "30", "40", "45"],
+  "richtigeAntwort": "35"
+},
+{
+  "frage": "Was ist 50 - 20?",
+  "antworten": ["30", "25", "20", "15"],
+  "richtigeAntwort": "30"
+},
+{
+  "frage": "Was ist 4 weniger als 18?",
+  "antworten": ["14", "15", "13", "16"],
+  "richtigeAntwort": "14"
+},
+{
+  "frage": "Was ist 7 × 3?",
+  "antworten": ["20", "21", "24", "18"],
+  "richtigeAntwort": "21"
+},
+{
+  "frage": "Was ist 36 ÷ 6?",
+  "antworten": ["5", "6", "7", "8"],
+  "richtigeAntwort": "6"
+},
+{
+  "frage": "Wie viele Tage hat eine Woche?",
+  "antworten": ["5", "6", "7", "8"],
+  "richtigeAntwort": "7"
+},
+{
+  "frage": "Wie viele Zentimeter sind 1 Meter?",
+  "antworten": ["10", "100", "1000", "50"],
+  "richtigeAntwort": "100"
+},
+{
+  "frage": "Was ist 100 ÷ 10?",
+  "antworten": ["10", "5", "15", "20"],
+  "richtigeAntwort": "10"
+},
+{
+  "frage": "Was ist 8 × 8?",
+  "antworten": ["64", "56", "72", "66"],
+  "richtigeAntwort": "64"
+},
+{
+  "frage": "Was ist 49 ÷ 7?",
+  "antworten": ["6", "7", "8", "9"],
+  "richtigeAntwort": "7"
+},
+{
+  "frage": "Was ist 9 × 5?",
+  "antworten": ["40", "45", "35", "50"],
+  "richtigeAntwort": "45"
+},
+{
+  "frage": "Was ist 0 × 7?",
+  "antworten": ["7", "0", "1", "unendlich"],
+  "richtigeAntwort": "0"
+},
+{
+  "frage": "Was ist 15 + 25?",
+  "antworten": ["35", "45", "40", "30"],
+  "richtigeAntwort": "40"
+},
+{
+  "frage": "Wie viele Viertel hat ein Ganzes?",
+  "antworten": ["2", "4", "6", "8"],
+  "richtigeAntwort": "4"
+},
+{
+  "frage": "Was ist 6 mehr als 13?",
+  "antworten": ["18", "17", "19", "20"],
+  "richtigeAntwort": "19"
+},
+{
+  "frage": "Was ist 7 weniger als 30?",
+  "antworten": ["23", "22", "24", "21"],
+  "richtigeAntwort": "23"
+},
+{
+  "frage": "Was ist 2 × 9?",
+  "antworten": ["16", "18", "19", "17"],
+  "richtigeAntwort": "18"
+},
+{
+  "frage": "Was ist 5 × 6?",
+  "antworten": ["25", "30", "35", "20"],
+  "richtigeAntwort": "30"
+},
+{
+  "frage": "Was ist 4 × 9?",
+  "antworten": ["36", "32", "40", "34"],
+  "richtigeAntwort": "36"
+},
+{
+  "frage": "Was ist 3 × 8?",
+  "antworten": ["24", "26", "20", "22"],
+  "richtigeAntwort": "24"
+},
+{
+  "frage": "Was ist 18 ÷ 3?",
+  "antworten": ["6", "5", "7", "8"],
+  "richtigeAntwort": "6"
+},
+{
+  "frage": "Was ist 27 ÷ 3?",
+  "antworten": ["9", "8", "7", "6"],
+  "richtigeAntwort": "9"
+},
+{
+  "frage": "Wie viele Sekunden hat eine Minute?",
+  "antworten": ["30", "60", "90", "100"],
+  "richtigeAntwort": "60"
+},
+{
+  "frage": "Wie viele Monate hat ein Jahr?",
+  "antworten": ["10", "11", "12", "13"],
+  "richtigeAntwort": "12"
+},
+{
+  "frage": "Was ist 15 ÷ 5?",
+  "antworten": ["2", "3", "4", "5"],
+  "richtigeAntwort": "3"
+},
+{
+  "frage": "Wie viel ist 2 + 2 × 3?",
+  "antworten": ["10", "8", "12", "6"],
+  "richtigeAntwort": "8"
+},
+{
+  "frage": "Was ist 100 - 55?",
+  "antworten": ["45", "40", "50", "35"],
+  "richtigeAntwort": "45"
+},
+{
+  "frage": "Wie viele Stunden hat ein Tag?",
+  "antworten": ["12", "24", "10", "20"],
+  "richtigeAntwort": "24"
+},
+{
+  "frage": "Wie viel ist 11 + 11?",
+  "antworten": ["21", "22", "23", "24"],
+  "richtigeAntwort": "22"
+},
+{
+  "frage": "Was ist das Ergebnis von 6 × 6?",
+  "antworten": ["36", "30", "40", "42"],
+  "richtigeAntwort": "36"
+},
+{
+  "frage": "Wie viele Ecken hat ein Würfel?",
+  "antworten": ["8", "6", "12", "4"],
+  "richtigeAntwort": "8"
+},
+{
+  "frage": "Wie viel ist 90 ÷ 10?",
+  "antworten": ["8", "9", "10", "7"],
+  "richtigeAntwort": "9"
+}
     ],
     "Englisch": [
       {
-        "frage": "Was heißt 'apple' auf Deutsch?",
-        "antworten": ["Birne", "Banane", "Apfel", "Orange"],
-        "richtigeAntwort": "Apfel"
-      },
-      {
-        "frage": "Was ist die richtige Übersetzung für 'I am a boy'?",
-        "antworten": ["Ich bin ein Junge", "Ich bin ein Mann", "Ich bin ein Kind", "Ich bin ein Mädchen"],
-        "richtigeAntwort": "Ich bin ein Junge"
-      },
-      {
-        "frage": "Wie sagt man 'Danke' auf Englisch?",
-        "antworten": ["Please", "Hello", "Sorry", "Thank you"],
-        "richtigeAntwort": "Thank you"
-      }
-    ]
+  "frage": "Was heißt 'cat' auf Deutsch?",
+  "antworten": ["Katze", "Hund", "Maus", "Vogel"],
+  "richtigeAntwort": "Katze"
+},
+{
+  "frage": "Was heißt 'dog' auf Deutsch?",
+  "antworten": ["Katze", "Hund", "Bär", "Löwe"],
+  "richtigeAntwort": "Hund"
+},
+{
+  "frage": "Wie sagt man 'Hallo' auf Englisch?",
+  "antworten": ["Bye", "Good", "Hello", "Yes"],
+  "richtigeAntwort": "Hello"
+},
+{
+  "frage": "Was heißt 'red'?",
+  "antworten": ["blau", "gelb", "grün", "rot"],
+  "richtigeAntwort": "rot"
+},
+{
+  "frage": "Wie sagt man 'Tschüss' auf Englisch?",
+  "antworten": ["Bye", "Hi", "Thanks", "Welcome"],
+  "richtigeAntwort": "Bye"
+},
+{
+  "frage": "Was heißt 'green'?",
+  "antworten": ["rot", "blau", "grün", "gelb"],
+  "richtigeAntwort": "grün"
+},
+{
+  "frage": "Was ist 'school' auf Deutsch?",
+  "antworten": ["Haus", "Stuhl", "Schule", "Tisch"],
+  "richtigeAntwort": "Schule"
+},
+{
+  "frage": "Was heißt 'chair'?",
+  "antworten": ["Tisch", "Stuhl", "Buch", "Tür"],
+  "richtigeAntwort": "Stuhl"
+},
+{
+  "frage": "Wie sagt man 'Ich heiße Paul' auf Englisch?",
+  "antworten": ["I am Paul", "My name is Paul", "Me Paul", "I call Paul"],
+  "richtigeAntwort": "My name is Paul"
+},
+{
+  "frage": "Was bedeutet 'blue'?",
+  "antworten": ["braun", "blau", "grau", "grün"],
+  "richtigeAntwort": "blau"
+},
+{
+  "frage": "Was ist 'mother' auf Deutsch?",
+  "antworten": ["Vater", "Mutter", "Tante", "Oma"],
+  "richtigeAntwort": "Mutter"
+},
+{
+  "frage": "Wie sagt man 'Ich bin 8 Jahre alt' auf Englisch?",
+  "antworten": ["I have 8 years", "I am 8 years old", "I age 8", "Me 8 years"],
+  "richtigeAntwort": "I am 8 years old"
+},
+{
+  "frage": "Was ist die richtige Übersetzung für 'book'?",
+  "antworten": ["Buch", "Tisch", "Blatt", "Heft"],
+  "richtigeAntwort": "Buch"
+},
+{
+  "frage": "Was heißt 'friend'?",
+  "antworten": ["Feind", "Freund", "Tier", "Schüler"],
+  "richtigeAntwort": "Freund"
+},
+{
+  "frage": "Was bedeutet 'car'?",
+  "antworten": ["Bus", "Auto", "Fahrrad", "Zug"],
+  "richtigeAntwort": "Auto"
+},
+{
+  "frage": "Wie sagt man 'Ja' auf Englisch?",
+  "antworten": ["No", "Hello", "Yes", "Maybe"],
+  "richtigeAntwort": "Yes"
+},
+{
+  "frage": "Wie heißt 'teacher' auf Deutsch?",
+  "antworten": ["Schüler", "Lehrer", "Tafel", "Buch"],
+  "richtigeAntwort": "Lehrer"
+},
+{
+  "frage": "Was ist 'table' auf Deutsch?",
+  "antworten": ["Stuhl", "Tisch", "Tafel", "Lampe"],
+  "richtigeAntwort": "Tisch"
+},
+{
+  "frage": "Was heißt 'window'?",
+  "antworten": ["Tür", "Fenster", "Wand", "Decke"],
+  "richtigeAntwort": "Fenster"
+},
+{
+  "frage": "Was ist 'nose' auf Deutsch?",
+  "antworten": ["Ohr", "Auge", "Nase", "Mund"],
+  "richtigeAntwort": "Nase"
+},
+{
+  "frage": "Was bedeutet 'I like pizza'?",
+  "antworten": ["Ich mache Pizza", "Ich esse Pizza", "Ich mag Pizza", "Ich koche Pizza"],
+  "richtigeAntwort": "Ich mag Pizza"
+},
+{
+  "frage": "Was heißt 'sun'?",
+  "antworten": ["Sonne", "Mond", "Erde", "Stern"],
+  "richtigeAntwort": "Sonne"
+},
+{
+  "frage": "Was heißt 'house'?",
+  "antworten": ["Schule", "Haus", "Zelt", "Zimmer"],
+  "richtigeAntwort": "Haus"
+},
+{
+  "frage": "Was ist die englische Zahl für 'drei'?",
+  "antworten": ["three", "two", "four", "ten"],
+  "richtigeAntwort": "three"
+},
+{
+  "frage": "Was heißt 'ball'?",
+  "antworten": ["Buch", "Ball", "Auto", "Puppe"],
+  "richtigeAntwort": "Ball"
+},
+{
+  "frage": "Was ist 'bird' auf Deutsch?",
+  "antworten": ["Bär", "Biene", "Vogel", "Fisch"],
+  "richtigeAntwort": "Vogel"
+},
+{
+  "frage": "Wie sagt man 'Wie geht es dir?' auf Englisch?",
+  "antworten": ["Where are you?", "How do you do?", "How are you?", "What are you doing?"],
+  "richtigeAntwort": "How are you?"
+},
+{
+  "frage": "Was heißt 'milk'?",
+  "antworten": ["Milch", "Saft", "Wasser", "Tee"],
+  "richtigeAntwort": "Milch"
+},
+{
+  "frage": "Was bedeutet 'pen'?",
+  "antworten": ["Bleistift", "Kuli", "Radiergummi", "Lineal"],
+  "richtigeAntwort": "Kuli"
+},
+{
+  "frage": "Was heißt 'nine'?",
+  "antworten": ["sieben", "acht", "neun", "zehn"],
+  "richtigeAntwort": "neun"
+},
+{
+  "frage": "Was ist 'ear' auf Deutsch?",
+  "antworten": ["Auge", "Ohr", "Nase", "Zahn"],
+  "richtigeAntwort": "Ohr"
+},
+{
+  "frage": "Was heißt 'father'?",
+  "antworten": ["Vater", "Onkel", "Bruder", "Freund"],
+  "richtigeAntwort": "Vater"
+},
+{
+  "frage": "Was bedeutet 'girl'?",
+  "antworten": ["Mädchen", "Junge", "Frau", "Mutter"],
+  "richtigeAntwort": "Mädchen"
+},
+{
+  "frage": "Was ist die englische Zahl für 'acht'?",
+  "antworten": ["seven", "eight", "nine", "ten"],
+  "richtigeAntwort": "eight"
+},
+{
+  "frage": "Was ist 'hand' auf Deutsch?",
+  "antworten": ["Kopf", "Bein", "Hand", "Fuß"],
+  "richtigeAntwort": "Hand"
+},
+{
+  "frage": "Was heißt 'schoolbag'?",
+  "antworten": ["Ranzen", "Heft", "Tisch", "Buch"],
+  "richtigeAntwort": "Ranzen"
+},
+{
+  "frage": "Was bedeutet 'I have a cat'?",
+  "antworten": ["Ich sehe eine Katze", "Ich habe eine Katze", "Ich mag Katzen", "Ich spiele mit einer Katze"],
+  "richtigeAntwort": "Ich habe eine Katze"
+},
+{
+  "frage": "Was heißt 'banana'?",
+  "antworten": ["Apfel", "Birne", "Banane", "Orange"],
+  "richtigeAntwort": "Banane"
+},
+{
+  "frage": "Wie sagt man 'Ich liebe dich' auf Englisch?",
+  "antworten": ["I miss you", "I like you", "I love you", "I see you"],
+  "richtigeAntwort": "I love you"
+},
+{
+  "frage": "Was heißt 'big'?",
+  "antworten": ["klein", "groß", "schnell", "langsam"],
+  "richtigeAntwort": "groß"
+},
+{
+  "frage": "Was heißt 'small'?",
+  "antworten": ["lang", "dick", "klein", "hoch"],
+  "richtigeAntwort": "klein"
+},
+{
+  "frage": "Was ist 'eye' auf Deutsch?",
+  "antworten": ["Nase", "Ohr", "Auge", "Zunge"],
+  "richtigeAntwort": "Auge"
+},
+{
+  "frage": "Was bedeutet 'Thank you very much'?",
+  "antworten": ["Gern geschehen", "Bitte sehr", "Vielen Dank", "Willkommen"],
+  "richtigeAntwort": "Vielen Dank"
+},
+{
+  "frage": "Was heißt 'brother'?",
+  "antworten": ["Bruder", "Vater", "Onkel", "Cousin"],
+  "richtigeAntwort": "Bruder"
+},
+{
+  "frage": "Was heißt 'sister'?",
+  "antworten": ["Mutter", "Tochter", "Schwester", "Tante"],
+  "richtigeAntwort": "Schwester"
+},
+{
+  "frage": "Was ist 'horse' auf Deutsch?",
+  "antworten": ["Hund", "Pferd", "Katze", "Kuh"],
+  "richtigeAntwort": "Pferd"
+},
+{
+  "frage": "Was ist die englische Zahl für 'fünf'?",
+  "antworten": ["four", "five", "six", "three"],
+  "richtigeAntwort": "five"
+},
+{
+  "frage": "Was heißt 'nose'?",
+  "antworten": ["Nase", "Auge", "Ohr", "Hand"],
+  "richtigeAntwort": "Nase"
+},
+{
+  "frage": "Was ist 'rain' auf Deutsch?",
+  "antworten": ["Wolke", "Regen", "Sonne", "Wind"],
+  "richtigeAntwort": "Regen"
+},
+{
+  "frage": "Was bedeutet 'good night'?",
+  "antworten": ["Guten Tag", "Guten Morgen", "Gute Nacht", "Hallo"],
+  "richtigeAntwort": "Gute Nacht"
+},
+{
+  "frage": "Was heißt 'computer' auf Deutsch?",
+  "antworten": ["Computer", "Tastatur", "Bildschirm", "Maus"],
+  "richtigeAntwort": "Computer"
+},
+{
+  "frage": "Was heißt 'hat'?",
+  "antworten": ["Schuh", "Jacke", "Hut", "Hemd"],
+  "richtigeAntwort": "Hut"
+},
+{
+  "frage": "Was bedeutet 'It is sunny'?",
+  "antworten": ["Es ist regnerisch", "Es ist windig", "Es ist sonnig", "Es ist Nacht"],
+  "richtigeAntwort": "Es ist sonnig"
+}
+  ],
+  "Sachkunde": [{
+  "frage": "Wie viele Jahreszeiten gibt es?",
+  "antworten": ["3", "4", "5", "2"],
+  "richtigeAntwort": "4"
+},
+{
+  "frage": "Was zeigt ein Thermometer an?",
+  "antworten": ["Zeit", "Gewicht", "Temperatur", "Länge"],
+  "richtigeAntwort": "Temperatur"
+},
+{
+  "frage": "Welche Tiere legen Eier?",
+  "antworten": ["Katzen", "Hühner", "Hunde", "Kühe"],
+  "richtigeAntwort": "Hühner"
+},
+{
+  "frage": "Was wächst im Wald?",
+  "antworten": ["Tische", "Autos", "Bäume", "Straßen"],
+  "richtigeAntwort": "Bäume"
+},
+{
+  "frage": "Was braucht eine Pflanze zum Wachsen?",
+  "antworten": ["Kaffee", "Licht", "Steine", "Milch"],
+  "richtigeAntwort": "Licht"
+},
+{
+  "frage": "Was ist ein Insekt?",
+  "antworten": ["Biene", "Maus", "Frosch", "Schlange"],
+  "richtigeAntwort": "Biene"
+},
+{
+  "frage": "Was schützt dich beim Fahrradfahren?",
+  "antworten": ["Schirm", "Helm", "Mütze", "Tasche"],
+  "richtigeAntwort": "Helm"
+},
+{
+  "frage": "Wie nennt man Wasser in festem Zustand?",
+  "antworten": ["Wasserdampf", "Regen", "Eis", "Nebel"],
+  "richtigeAntwort": "Eis"
+},
+{
+  "frage": "Welches Tier lebt im Wasser?",
+  "antworten": ["Fisch", "Katze", "Hase", "Pferd"],
+  "richtigeAntwort": "Fisch"
+},
+{
+  "frage": "Was sind Laubbäume?",
+  "antworten": ["Bäume mit Nadeln", "Bäume mit Blättern", "Trockene Bäume", "Bäume aus Metall"],
+  "richtigeAntwort": "Bäume mit Blättern"
+},
+{
+  "frage": "Wie nennt man einen Wetterbericht?",
+  "antworten": ["Wetterpost", "Wetterkarte", "Wetternachricht", "Wettervorhersage"],
+  "richtigeAntwort": "Wettervorhersage"
+},
+{
+  "frage": "Was gehört zu den Sinnesorganen?",
+  "antworten": ["Herz", "Ohr", "Magen", "Lunge"],
+  "richtigeAntwort": "Ohr"
+},
+{
+  "frage": "Was braucht der Mensch zum Leben?",
+  "antworten": ["Fernseher", "Wasser", "Handy", "Stuhl"],
+  "richtigeAntwort": "Wasser"
+},
+{
+  "frage": "Was macht ein Kompass?",
+  "antworten": ["Zeigt Himmelsrichtungen", "Zeigt Temperatur", "Misst Zeit", "Macht Musik"],
+  "richtigeAntwort": "Zeigt Himmelsrichtungen"
+},
+{
+  "frage": "Wie viele Beine hat eine Spinne?",
+  "antworten": ["6", "8", "10", "4"],
+  "richtigeAntwort": "8"
+},
+{
+  "frage": "Welcher Planet ist der Sonne am nächsten?",
+  "antworten": ["Venus", "Erde", "Mars", "Merkur"],
+  "richtigeAntwort": "Merkur"
+},
+{
+  "frage": "Was ist eine Ampel?",
+  "antworten": ["Eine Uhr", "Ein Verkehrssignal", "Ein Ball", "Ein Auto"],
+  "richtigeAntwort": "Ein Verkehrssignal"
+},
+{
+  "frage": "Was ist ein Haustier?",
+  "antworten": ["Löwe", "Tiger", "Hund", "Fuchs"],
+  "richtigeAntwort": "Hund"
+},
+{
+  "frage": "Woraus gewinnt man Mehl?",
+  "antworten": ["Mais", "Reis", "Weizen", "Äpfel"],
+  "richtigeAntwort": "Weizen"
+},
+{
+  "frage": "Was zeigt eine Landkarte?",
+  "antworten": ["Straßen und Orte", "Fernsehen", "Filme", "Rezepte"],
+  "richtigeAntwort": "Straßen und Orte"
+},
+{
+  "frage": "Wie nennt man das Zuhause von Bienen?",
+  "antworten": ["Nest", "Höhle", "Stall", "Bienenstock"],
+  "richtigeAntwort": "Bienenstock"
+},
+{
+  "frage": "Was ist ein Reptil?",
+  "antworten": ["Frosch", "Schlange", "Vogel", "Fisch"],
+  "richtigeAntwort": "Schlange"
+},
+{
+  "frage": "Was ist der größte Planet im Sonnensystem?",
+  "antworten": ["Mars", "Erde", "Jupiter", "Saturn"],
+  "richtigeAntwort": "Jupiter"
+},
+{
+  "frage": "Was wächst aus einer Eichel?",
+  "antworten": ["Kiefer", "Tanne", "Buche", "Eiche"],
+  "richtigeAntwort": "Eiche"
+},
+{
+  "frage": "Welche Farbe hat reines Wasser?",
+  "antworten": ["Blau", "Weiß", "Klar", "Grün"],
+  "richtigeAntwort": "Klar"
+},
+{
+  "frage": "Wie nennt man den Wechsel von Tag und Nacht?",
+  "antworten": ["Wetter", "Erdrotation", "Jahreszeiten", "Sonnenlauf"],
+  "richtigeAntwort": "Erdrotation"
+},
+{
+  "frage": "Womit atmen Menschen?",
+  "antworten": ["Mund", "Herz", "Lunge", "Nase"],
+  "richtigeAntwort": "Lunge"
+},
+{
+  "frage": "Was ist ein Raubtier?",
+  "antworten": ["Schaf", "Löwe", "Kuh", "Huhn"],
+  "richtigeAntwort": "Löwe"
+},
+{
+  "frage": "Wofür brauchen wir Strom?",
+  "antworten": ["Essen", "Licht", "Wasser", "Luft"],
+  "richtigeAntwort": "Licht"
+},
+{
+  "frage": "Was macht ein Biber?",
+  "antworten": ["Gräbt Höhlen", "Baut Dämme", "Singt Lieder", "Fliegt"],
+  "richtigeAntwort": "Baut Dämme"
+},
+{
+  "frage": "Was schützt uns vor Regen?",
+  "antworten": ["Hut", "Sonnenbrille", "Regenschirm", "Tasche"],
+  "richtigeAntwort": "Regenschirm"
+},
+{
+  "frage": "Wie nennt man das Zuhause eines Vogels?",
+  "antworten": ["Hütte", "Nest", "Käfig", "Bau"],
+  "richtigeAntwort": "Nest"
+},
+{
+  "frage": "Welcher Teil des Körpers hört?",
+  "antworten": ["Nase", "Mund", "Ohr", "Auge"],
+  "richtigeAntwort": "Ohr"
+},
+{
+  "frage": "Was zeigt ein Lineal?",
+  "antworten": ["Länge", "Temperatur", "Gewicht", "Zeit"],
+  "richtigeAntwort": "Länge"
+},
+{
+  "frage": "Welcher Sinn gehört NICHT dazu?",
+  "antworten": ["Sehen", "Schmecken", "Laufen", "Hören"],
+  "richtigeAntwort": "Laufen"
+},
+{
+  "frage": "Was ist ein Verkehrsmittel?",
+  "antworten": ["Schule", "Auto", "Haus", "Park"],
+  "richtigeAntwort": "Auto"
+},
+{
+  "frage": "Was macht der Mond?",
+  "antworten": ["Leuchtet selbst", "Spendet Wärme", "Reflektiert Sonnenlicht", "Hält Planeten"],
+  "richtigeAntwort": "Reflektiert Sonnenlicht"
+},
+{
+  "frage": "Was zeigt eine Uhr?",
+  "antworten": ["Zeit", "Wetter", "Temperatur", "Licht"],
+  "richtigeAntwort": "Zeit"
+},
+{
+  "frage": "Was ist 'recyceln'?",
+  "antworten": ["Malen", "Wiederverwenden", "Schreiben", "Waschen"],
+  "richtigeAntwort": "Wiederverwenden"
+},
+{
+  "frage": "Was ist eine Schnecke?",
+  "antworten": ["Säugetier", "Insekt", "Weichtier", "Vogel"],
+  "richtigeAntwort": "Weichtier"
+},
+{
+  "frage": "Welcher Planet ist unsere Erde?",
+  "antworten": ["1.", "2.", "3.", "4."],
+  "richtigeAntwort": "3."
+},
+{
+  "frage": "Was braucht man zum Zähneputzen?",
+  "antworten": ["Wasser", "Zahnbürste", "Handtuch", "Kamm"],
+  "richtigeAntwort": "Zahnbürste"
+},
+{
+  "frage": "Was ist ein Blatt?",
+  "antworten": ["Teil eines Baumes", "Tier", "Stein", "Frucht"],
+  "richtigeAntwort": "Teil eines Baumes"
+},
+{
+  "frage": "Wie heißt das große Meer zwischen Europa und Amerika?",
+  "antworten": ["Pazifik", "Atlantik", "Indik", "Nordsee"],
+  "richtigeAntwort": "Atlantik"
+},
+{
+  "frage": "Was ist typisch für den Winter?",
+  "antworten": ["Blüten", "Regen", "Schnee", "Sonne"],
+  "richtigeAntwort": "Schnee"
+},
+{
+  "frage": "Was gehört zur Mülltrennung?",
+  "antworten": ["Papier", "Kleider", "Spiele", "Wasser"],
+  "richtigeAntwort": "Papier"
+},
+{
+  "frage": "Was ist ein Vulkan?",
+  "antworten": ["Hügel", "Berg mit Feuer", "Wald", "See"],
+  "richtigeAntwort": "Berg mit Feuer"
+},
+{
+  "frage": "Was ist ein Igel?",
+  "antworten": ["Reptil", "Säugetier", "Vogel", "Insekt"],
+  "richtigeAntwort": "Säugetier"
+},
+{
+  "frage": "Was hat ein Baum unter der Erde?",
+  "antworten": ["Blätter", "Stamm", "Wurzeln", "Früchte"],
+  "richtigeAntwort": "Wurzeln"
+},
+{
+  "frage": "Was bedeutet 'frisch' bei Lebensmitteln?",
+  "antworten": ["alt", "verfault", "neu", "kaputt"],
+  "richtigeAntwort": "neu"
+},
+{
+  "frage": "Was ist ein Regenbogen?",
+  "antworten": ["Farbiges Licht", "Wolke", "Sturm", "Schnee"],
+  "richtigeAntwort": "Farbiges Licht"
+},
+{
+  "frage": "Was macht die Feuerwehr?",
+  "antworten": ["Post bringen", "Feuer löschen", "Essen kochen", "Schule bauen"],
+  "richtigeAntwort": "Feuer löschen"
+}
+]
   }
 }

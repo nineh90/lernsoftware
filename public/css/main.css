@@ -157,6 +157,7 @@ body {
   transform: translate(-50%, -50%);
   z-index: 999;
   width: 360px;
+  min-height: 520px;
   background: linear-gradient(to bottom right, #fff6cc, #ffe97f);
   border: 6px solid #c89b3c;
   border-radius: 16px;
@@ -477,6 +478,17 @@ body {
 .hidden {
   display: none;
 }
+
+@keyframes pulsieren {
+  0%, 100% { transform: scale(1); }
+  50%     { transform: scale(1.08); }
+}
+
+.avatar-pulsierend {
+  animation: pulsieren 2s infinite ease-in-out;
+  transform-origin: center center;
+}
+
 
 @media screen and (max-width: 480px) {
   .pokemon-card {

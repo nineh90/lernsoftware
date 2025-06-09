@@ -162,8 +162,7 @@ if (!user || !user.schuljahr) {
   }
 
 }
-
-function zeigeAufgaben(aufgaben, fach, user = null){
+function zeigeAufgaben(aufgaben, fach, user = null) {
   if (user) ausgewaehlterNutzer = user;
   starteLernTimer();
 
@@ -184,20 +183,16 @@ function zeigeAufgaben(aufgaben, fach, user = null){
     const vorherigesLevel = Math.floor(alteXP / 25) + 1;
     const neuesLevel = Math.floor(neueXP / 25) + 1;
 
-    // XP speichern
     ausgewaehlterNutzer.xp = neueXP;
 
-    // Punkte nach Fach speichern
     if (!ausgewaehlterNutzer.punkteByFach) ausgewaehlterNutzer.punkteByFach = {};
     if (!ausgewaehlterNutzer.punkteByFach[fach]) ausgewaehlterNutzer.punkteByFach[fach] = 0;
     ausgewaehlterNutzer.punkteByFach[fach] += punkte;
 
-    // 🏆 Belohnung prüfen, wenn Level-Up
     if (neuesLevel > vorherigesLevel) {
       pruefeBelohnung(neuesLevel);
     }
 
-    // Anzeige aktualisieren
     const restXP = neueXP % 25;
     const prozent = (restXP / 25) * 100;
 
@@ -254,6 +249,10 @@ function zeigeAufgaben(aufgaben, fach, user = null){
       button.className = "antwort-button";
 
       button.onclick = () => {
+        // Alle Antwort-Buttons deaktivieren
+        const alleButtons = document.querySelectorAll(".antwort-button");
+        alleButtons.forEach(b => b.disabled = true);
+
         const korrekt = antwort === frage.richtigeAntwort;
         zeigePopup(korrekt ? "Richtig! 🎉" : "Leider falsch 😕", korrekt, 1600);
 
@@ -540,6 +539,7 @@ async function zeigeFaecherMenue(user) {
 }
 
 function zeigeStartmenue(user) {
+  document.getElementById("schueler-avatar")?.classList.remove("avatar-pulsierend");
   const container = document.getElementById('aktionsbereich');
   if (!container) return;
 
@@ -635,7 +635,6 @@ function starteLernTimer() {
 
   const avatar = document.getElementById("schueler-avatar");
   const timerRing = document.querySelector(".timer-ring");
-  // if (avatar) avatar.classList.add("hidden");
   if (timerRing) timerRing.classList.remove("hidden");
 
   timerInterval = setInterval(() => {
@@ -656,28 +655,44 @@ function starteLernTimer() {
     aktualisiereTimerText(verbleibend);
     aktualisiereRing(verbleibend, istPause ? 300 : 600);
 
-    // ⏳ Zeit abgelaufen
     if (verbleibend <= 0) {
-      stoppeTimer();
-      lernTimerAktiv = false;
-
       if (!istPause) {
+        document.getElementById("schueler-avatar")?.classList.add("avatar-pulsierend");
         istPause = true;
-        verbleibend = 300; // 5 Minuten Pause
-        zeigePopup("Pause! 🧘 5 Minuten entspannen...", false);
+        verbleibend = 300; // ⏸ 5 Minuten Pause
+        zeigePauseAnzeige();
       } else {
+        document.getElementById("schueler-avatar")?.classList.remove("avatar-pulsierend");
         istPause = false;
-        verbleibend = 600; // 10 Minuten Lernen
-        zeigePopup("Weiter geht's! 💪", true);
+        verbleibend = 600; // ▶️ 10 Minuten Lernen
+        zeigeStartmenue(ausgewaehlterNutzer); // zurück ins Schülermenü
       }
-
-      setTimeout(() => {
-        document.getElementById("feedback-popup")?.classList.add("hidden");
-        starteLernTimer(); // Timer neu starten
-      }, 2000);
     }
+
   }, 1000);
 }
+
+function zeigePauseAnzeige() {
+  document.getElementById("schueler-avatar")?.classList.add("avatar-pulsierend");
+  const aktionsbereich = document.getElementById("aktionsbereich");
+  aktionsbereich.innerHTML = `
+    <h2>🧘 Pausezeit!</h2>
+    <p>Jetzt ist Zeit zum Entspannen. In 5 Minuten geht's weiter.</p>
+  `;
+
+  // Optional: Timer anzeigen
+  const timerAnzeigen = document.createElement("p");
+  timerAnzeigen.id = "pause-countdown";
+  aktionsbereich.appendChild(timerAnzeigen);
+
+  const countdownUpdate = setInterval(() => {
+    const min = Math.floor(verbleibend / 60).toString().padStart(2, '0');
+    const sec = (verbleibend % 60).toString().padStart(2, '0');
+    timerAnzeigen.textContent = `⏳ ${min}:${sec}`;
+    if (verbleibend <= 0) clearInterval(countdownUpdate);
+  }, 1000);
+}
+
 
 function aktualisiereTimerText(sekunden) {
   const min = Math.floor(sekunden / 60).toString().padStart(2, '0');
