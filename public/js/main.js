@@ -19,7 +19,6 @@ async function ladeNutzer() {
       const avatarUrl = nutzer.avatarId
         ? `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${nutzer.avatarId}.png`
         : 'assets/default-avatar.png';
-
       const box = document.createElement('div');
       box.className = 'user-box';
       box.innerHTML = `
@@ -162,6 +161,7 @@ if (!user || !user.schuljahr) {
   }
 
 }
+
 function zeigeAufgaben(aufgaben, fach, user = null) {
   if (user) ausgewaehlterNutzer = user;
   starteLernTimer();
@@ -175,41 +175,69 @@ function zeigeAufgaben(aufgaben, fach, user = null) {
   const falschBeantwortet = new Set();
 
   function speichereXP(punkte) {
-    if (!ausgewaehlterNutzer) return;
+  if (!ausgewaehlterNutzer) return;
 
-    const alteXP = ausgewaehlterNutzer.xp || 0;
-    const neueXP = alteXP + punkte;
+  const alteXP = ausgewaehlterNutzer.xp || 0;
+  const neueXP = alteXP + punkte;
 
-    const vorherigesLevel = Math.floor(alteXP / 25) + 1;
-    const neuesLevel = Math.floor(neueXP / 25) + 1;
+  const vorherigesLevel = Math.floor(alteXP / 25) + 1;
+  const neuesLevel = Math.floor(neueXP / 25) + 1;
 
-    ausgewaehlterNutzer.xp = neueXP;
+  ausgewaehlterNutzer.xp = neueXP;
 
-    if (!ausgewaehlterNutzer.punkteByFach) ausgewaehlterNutzer.punkteByFach = {};
-    if (!ausgewaehlterNutzer.punkteByFach[fach]) ausgewaehlterNutzer.punkteByFach[fach] = 0;
-    ausgewaehlterNutzer.punkteByFach[fach] += punkte;
+  // Punkte pro Fach
+  if (!ausgewaehlterNutzer.punkteByFach) ausgewaehlterNutzer.punkteByFach = {};
+  if (!ausgewaehlterNutzer.punkteByFach[fach]) ausgewaehlterNutzer.punkteByFach[fach] = 0;
+  ausgewaehlterNutzer.punkteByFach[fach] += punkte;
+
+  // Neue XP-Berechnung
+  const restXP = neueXP % 25;
+  const prozent = (restXP / 25) * 100;
+
+  // DOM-Elemente holen
+  const xpAnzeige = document.getElementById("schueler-xp");
+  const levelAnzeige = document.getElementById("schueler-level");
+  const xpBar = document.querySelector("#schueler-modal .xp-bar .xp-progress");
+  const avatar = document.getElementById("schueler-avatar");
+
+  // DOM aktualisieren
+  if (xpAnzeige) xpAnzeige.innerText = `XP: ${neueXP}`;
+  if (levelAnzeige) {
+    levelAnzeige.innerText = neuesLevel;
 
     if (neuesLevel > vorherigesLevel) {
-      pruefeBelohnung(neuesLevel);
+      levelAnzeige.classList.add("level-boost");
+      setTimeout(() => levelAnzeige.classList.remove("level-boost"), 600);
     }
-
-    const restXP = neueXP % 25;
-    const prozent = (restXP / 25) * 100;
-
-    const xpAnzeige = document.getElementById("schueler-xp");
-    const levelAnzeige = document.getElementById("schueler-level");
-    const xpBar = document.querySelector("#schueler-modal .xp-bar .xp-progress");
-
-    if (xpAnzeige) xpAnzeige.innerText = `XP: ${neueXP}`;
-    if (levelAnzeige) levelAnzeige.innerText = neuesLevel;
-    if (xpBar) xpBar.style.width = `${prozent}%`;
-
-    fetch(`${API_BASE}/api/users`, {
-      method: "PUT",
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(ausgewaehlterNutzer)
-    }).catch(err => console.error("Fehler beim Speichern der XP:", err));
   }
+
+  if (xpBar) {
+    xpBar.style.width = `${prozent}%`;
+
+    if (neuesLevel > vorherigesLevel) {
+      xpBar.classList.add("level-up");
+      setTimeout(() => xpBar.classList.remove("level-up"), 1200);
+    }
+  }
+
+  // 🐾 Avatar-Hop bei XP-Gewinn
+  if (avatar) {
+    avatar.classList.add("avatar-hop");
+    setTimeout(() => avatar.classList.remove("avatar-hop"), 800);
+  }
+
+  // Belohnung prüfen
+  if (neuesLevel > vorherigesLevel) {
+    pruefeBelohnung(neuesLevel);
+  }
+
+  // Server speichern
+  fetch(`${API_BASE}/api/users`, {
+    method: "PUT",
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(ausgewaehlterNutzer)
+  }).catch(err => console.error("Fehler beim Speichern der XP:", err));
+}
 
   function zeigeAbschluss() {
     aktionsbereich.innerHTML = `<strong>Super, du hast alle Aufgaben in ${fach} geschafft! 🎓</strong>`;
@@ -248,26 +276,35 @@ function zeigeAufgaben(aufgaben, fach, user = null) {
       button.innerText = antwort;
       button.className = "antwort-button";
 
-      button.onclick = () => {
-        // Alle Antwort-Buttons deaktivieren
-        const alleButtons = document.querySelectorAll(".antwort-button");
-        alleButtons.forEach(b => b.disabled = true);
+button.onclick = () => {
+  // Alle Antwort-Buttons deaktivieren
+  const alleButtons = document.querySelectorAll(".antwort-button");
+  alleButtons.forEach(b => b.disabled = true);
 
-        const korrekt = antwort === frage.richtigeAntwort;
-        zeigePopup(korrekt ? "Richtig! 🎉" : "Leider falsch 😕", korrekt, 1600);
+  const korrekt = antwort === frage.richtigeAntwort;
+  zeigePopup(korrekt ? "Richtig! 🎉" : "Falsch! 😕", korrekt, 1600);
 
-        if (korrekt) {
-          speichereXP(1);
-        } else {
-          const frageHash = frage.frage + "|" + frage.richtigeAntwort;
-          if (!falschBeantwortet.has(frageHash)) {
-            falschBeantwortet.add(frageHash);
-            fragenQueue.push(frage); // nur einmalige Wiederholung
-          }
-        }
+  const avatar = document.getElementById("schueler-avatar"); // Avatar holen
 
-        setTimeout(zeigeFrage, 1600);
-      };
+  if (korrekt) {
+    speichereXP(1);
+    // ggf. Hop-Animation bleibt wie gehabt
+  } else {
+    // ❌ Avatar wackelt bei falscher Antwort
+    if (avatar) {
+      avatar.classList.add("avatar-shake");
+      setTimeout(() => avatar.classList.remove("avatar-shake"), 600);
+    }
+
+    const frageHash = frage.frage + "|" + frage.richtigeAntwort;
+    if (!falschBeantwortet.has(frageHash)) {
+      falschBeantwortet.add(frageHash);
+      fragenQueue.push(frage); // nur einmalige Wiederholung
+    }
+  }
+
+  setTimeout(zeigeFrage, 1600);
+};
 
       aktionsbereich.appendChild(button);
     });

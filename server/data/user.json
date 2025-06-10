@@ -58,5 +58,65 @@
     "schuljahr": 4,
     "punkteByFach": {},
     "fleisssterne": 0
+  },
+  {
+    "name": "Test",
+    "rolle": "schüler",
+    "avatarId": 18,
+    "xp": 85,
+    "lernzeit": 5202,
+    "praemien": [
+      {
+        "level": 2,
+        "name": "Sticker-Set",
+        "beschreibung": "Du bekommst ein kleines Sticker-Set! 🖼️",
+        "typ": "item",
+        "wert": "sticker-set",
+        "datum": "2025-06-09"
+      },
+      {
+        "stufe": 1,
+        "zeit": 900,
+        "name": "Frühstarter-Bonus",
+        "beschreibung": "15 Minuten durchgehalten – sehr gut! 🔥",
+        "typ": "item",
+        "wert": "bonus-frueh",
+        "datum": "2025-06-10"
+      },
+      {
+        "level": 3,
+        "name": "Süßigkeiten-Bonus",
+        "beschreibung": "Eine kleine Nascherei wartet auf dich! 🍬",
+        "typ": "item",
+        "wert": "suessigkeit",
+        "datum": "2025-06-10"
+      },
+      {
+        "stufe": 2,
+        "zeit": 4500,
+        "name": "Ausdauer-Medaille",
+        "beschreibung": "Schon über 1 Stunde fleißig – Respekt! 💪",
+        "typ": "item",
+        "wert": "ausdauer",
+        "datum": "2025-06-10"
+      },
+      {
+        "level": 4,
+        "name": "Dankeschön-Urkunde",
+        "beschreibung": "Du bekommst eine offizielle Urkunde mit deinem Namen. 🏅",
+        "typ": "item",
+        "wert": "urkunde",
+        "datum": "2025-06-10"
+      }
+    ],
+    "schuljahr": 4,
+    "punkteByFach": {
+      "Englisch": 34,
+      "Deutsch": 19,
+      "Mathe": 50,
+      "Sachkunde": 4
+    },
+    "id": 6,
+    "fleisssterne": 2
   }
 ]

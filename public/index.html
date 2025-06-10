@@ -48,11 +48,14 @@
       <circle class="ring-progress" cx="50" cy="50" r="45" />
       <text id="timer-text" x="50" y="55" text-anchor="middle" class="timer-text">10:00</text>
     </svg>
-    <img id="schueler-avatar" class="avatar-img" src="" alt="Avatar">
+    <div class="avatar-wrapper">
+      <img id="schueler-avatar" class="avatar-img" src="" alt="Avatar">
+    </div>
+    <div id="feedback-popup" class="popup hidden"></div>
   </div>
-
-  <h3 id="schueler-xp" class="kopf-rechts"></h3>
+  
   <!-- XP-Bar -->
+  <h3 id="schueler-xp" class="kopf-rechts"></h3>
   <div class="xp-bar">
     <div class="xp-progress" style="width: 0%;"></div>
   </div>
@@ -66,8 +69,6 @@
   </div>
 </div>
 
-<div id="feedback-popup" class="popup hidden"></div>
-
 <div id="belohnung-popup" class="popup hidden"></div>
 
 <div id="avatar-bearbeiten-modal" class="hidden">
@@ -75,11 +76,6 @@
   <div id="avatar-auswahl" class="avatar-grid"></div>
   <button class="login-button" onclick="schliesseAvatarAuswahl()">Zurück</button>
 </div>
-
-
-
-
-
 
 <!-- <script src="js/script.js"></script> -->
   <script src="js/main.js"></script>
